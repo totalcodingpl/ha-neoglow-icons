@@ -14,7 +14,7 @@ Welcome to **NeoGlow Icons**, the ultimate way to revolutionize your Home Assist
 ## 🖥️ Official Companion Web Explorer
 
 To search, preview, and easily copy the icon codes, we provide a state-of-the-art web search utility:
-👉 **[https://total.smallhost.pl/](https://total.smallhost.pl/)**
+👉 **[https://total.smallhost.pl/index3.html](https://total.smallhost.pl/index3.html)**
 
 ### What is the `hacs-neoglow-explorer`?
 The **NeoGlow Explorer** is a high-performance, glassmorphic web dashboard that serves as the official catalog for all available icons. 
@@ -40,7 +40,8 @@ The **NeoGlow Explorer** is a high-performance, glassmorphic web dashboard that 
 ### Step 2: Download the Plugin
 1. Find the newly added **NeoGlow Icons** plugin in your HACS list.
 2. Click on it, then click **Download** (*Pobierz*) in the bottom right corner.
-3. HACS will automatically download the required files to `/www/community/ha-neoglow-icons/` and register the Lovelace resource.
+3. HACS will download the files and should prompt you to reload your browser.
+4. **Important**: If HACS does not automatically add the Lovelace resource, go to **Settings** -> **Dashboards** -> **Resources** in Home Assistant, and manually add `/hacsfiles/ha-neoglow-icons/b31-icons.js` as a **JavaScript Module**.
 
 ### Step 3: Hard Reload Browser Cache
 Execute a hard reload in your web browser (`Ctrl` + `F5` on Windows/Linux, or `Cmd` + `Shift` + `R` on macOS) to ensure the Lovelace resource is loaded.
@@ -49,25 +50,19 @@ Execute a hard reload in your web browser (`Ctrl` + `F5` on Windows/Linux, or `C
 
 ## 💎 Premium Showcase Icons
 
-The plugin registers all icons under the **`b31:`** prefix. Below are 15 of our premier animated and colorful icons:
+The plugin registers all icons under the **`b31:`** prefix. Below are 3 of our premier animated and colorful icons extracted directly from the plugin:
 
-| Icon Preview | HA Icon ID | Description | CSS Animation Style |
-| :---: | :--- | :--- | :--- |
-| ⚡ | `b31:thunder_blink_4kR2` | Electric bolt with realistic lightning pulse | `b31-blink` (intermittent flashes) |
-| 🌀 | `b31:fan_2vPq` | Dynamic 4-blade fan with high-speed rotation | `b31-spin` (360° infinite rotation) |
-| 🔋 | `b31:battery_M5pT` | Battery cell showing horizontal power flow | `b31-flow` (animated charge flow) |
-| ⚡🔋 | `b31:battery_charging_J8qL` | Power cell under active fast charging | `b31-flash` (pulse-charging visual) |
-| ⚙️⚡ | `b31:gear_bolt_X9rB` | Rotating gear combined with a pulsing lightning bolt | Integrated (spin + pulse glow) |
-| 💡 | `b31:acx_light_on_p9w4` | Premium warm neon lightbulb with glowing aureole | `b31-pulse` (breathing light glow) |
-| 🌈 | `b31:acx_light_rgb_z1p3` | Smart RGB bulb cycling smoothly through color wheel | Dynamic (continuous HSL color shift) |
-| 🏃‍♂️ | `b31:acx_motion_active_a2x9` | Active motion sensor with expanding radar waves | `b31-pulse` + radial scaling |
-| 📡 | `b31:sensor_wifi_Y7sT` | Wi-Fi antenna propagating wireless signals | Sequential opacity wave |
-| 🌡️ | `b31:sensor_temperature_I4bN` | Intelligent temperature probe with moving fluid | Vertical fluid animation |
-| 💧 | `b31:sensor_humidity_U1pX` | Humidity droplet with oscillating water ripples | Floating drop motion |
-| 🚪 | `b31:door_C8mK` | Entry door with glowing lock and safety animations | Swing angle opening effect |
-| 🏡 | `b31:house_B6xR` | Eco-house layout that bounces on family member arrival | `b31-bounce` (vertical bounce) |
-| 🎬 | `b31:media_play_c4r9` | Media player button scaling dynamically in play state | Scaled pop pulse |
-| 🔌 | `b31:switch_outlet_A3nB` | Electric outlet throwing subtle power sparks | Spark effect emission |
+<div align="center">
+  <img src="assets/gear_bolt.svg" width="64" alt="Gear Bolt" />
+  <img src="assets/house.svg" width="64" alt="House" />
+  <img src="assets/crazy_fan.svg" width="64" alt="Crazy Fan" />
+</div>
+
+| HA Icon ID | Description | CSS Animation Style |
+| :--- | :--- | :--- |
+| `b31:gear_bolt_X9rB` | Rotating gear combined with a pulsing lightning bolt | Integrated (spin + pulse glow) |
+| `b31:house_B6xR` | Eco-house layout that bounces on family member arrival | `b31-bounce` (vertical bounce) |
+| `b31:crazy_fan_f9t2` | Dynamic 4-blade fan with high-speed rotation | Integrated rotation & pulse |
 
 ---
 
