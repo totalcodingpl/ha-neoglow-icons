@@ -1,96 +1,99 @@
-# 🌟 NeoGlow Icons - Animowany & Gradientowy Zestaw Ikon dla Home Assistant
+# 🌈 NeoGlow Icons - Animated & Colorful Gradient Icons for Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Category-Lovelace-purple.svg?style=for-the-badge)
 
-Wynieś swój interfejs Home Assistant na zupełnie nowy poziom premium z **NeoGlow Icons**! Zestaw oferuje ponad 100+ ręcznie dopracowanych, nowoczesnych ikon wspierających dynamiczne, animacje CSS oraz wielobarwne gradienty. 
+Welcome to **NeoGlow Icons**, the ultimate way to revolutionize your Home Assistant dashboards!
 
-Wszystkie ikony zostały zoptymalizowane pod kątem obciążenia CPU (inteligentny system cache'owania shadow DOM) i doskonale prezentują się zarówno na ciemnych, jak i jasnych motywach dashboardów Lovelace.
-
----
-
-## 🚀 Szybka Instalacja (HACS)
-
-### Krok 1: Dodanie niestandardowego repozytorium do HACS
-1. W Home Assistant przejdź do sekcji **HACS** -> **Frontend**.
-2. Kliknij **Trzy kropki** w prawym górnym rogu ekranu i wybierz **Niestandardowe repozytoria** (*Custom repositories*).
-3. W polu URL wklej adres swojego repozytorium na GitHub:
-   ```text
-   https://github.com/TWOJ_GITHUB/ha-neoglow-icons
-   ```
-4. Jako kategorię wybierz **Lovelace** (lub *Dashboard*).
-5. Kliknij **Dodaj** (*Add*).
-
-### Krok 2: Pobranie wtyczki
-1. Kliknij na nowo dodaną wtyczkę **NeoGlow Icons** na liście w HACS.
-2. Kliknij **Pobierz** (*Download*) w prawym dolnym rogu.
-3. HACS automatycznie doda wtyczkę jako zasób Lovelace.
-
-### Krok 3: Wymuszenie odświeżenia przeglądarki
-Wykonaj twarde przeładowanie strony w przeglądarce (`Ctrl` + `F5` na Windows / `Cmd` + `Shift` + `R` na macOS), aby silnik ikon załadował się poprawnie.
+> [!IMPORTANT]
+> **NeoGlow Icons** is currently the **ONLY custom icon pack available in HACS that features fully animated and multi-color gradient icons**! While typical icon sets are static and monochrome, NeoGlow icons are alive with smooth CSS keyframe animations, vibrant neon HSL gradients, and dynamic visual states.
 
 ---
 
-## 💎 Showcase Flagowych Ikon (Przykłady)
+## 🖥️ Official Companion Web Explorer
 
-Wtyczka rejestruje w systemie zestaw pod prefixem `neoglow:`. Poniżej znajduje się lista 15 najpopularniejszych, wysoce interaktywnych ikon gotowych do użycia:
-
-| Ikona | ID do użycia | Opis | Domyślna Animacja |
-| :--- | :--- | :--- | :--- |
-| ⚡ | `neoglow:thunder_blink_4kR2` | Klasyczny piorun z efektem delikatnego migania | `b31-blink` (delikatne miganie) |
-| 🌀 | `neoglow:fan_2vPq` | Dynamiczny, 4-łopatkowy wentylator smart home | `b31-spin` (płynny obrót o 360°) |
-| 🔋 | `neoglow:battery_M5pT` | Wskaźnik baterii z animowanym, płynącym prądem | `b31-flow` (przepływ w poziomie) |
-| ⚡🔋 | `neoglow:battery_charging_J8qL` | Bateria w stanie szybkiego ładowania sieciowego | `b31-flash` (impulsywne błyskanie) |
-| ⚙️⚡ | `neoglow:gear_bolt_X9rB` | Obracająca się zębatka z pulsującym w środku piorunem | Zintegrowana (obrót + pulsowanie) |
-| 💡 | `neoglow:acx_light_on_p9w4` | Żarówka z ciepłą, dynamiczną poświatą neonową | `b31-pulse` (delikatne pulsowanie) |
-| 🌈 | `neoglow:acx_light_rgb_z1p3` | Wielobarwna żarówka z płynną zmianą pełnej gamy barw | Dynamiczna (pętla zmiany kolorów RGB) |
-| 🏃‍♂️ | `neoglow:acx_motion_active_a2x9` | Aktywny czujnik ruchu z pulsującym radarem | `b31-pulse` + dynamiczne skalowanie |
-| 📡 | `neoglow:sensor_wifi_Y7sT` | Ikona Wi-Fi z rozchodzącymi się falami sygnału | Animacja sekwencyjnego wygaszania fal |
-| 🌡️ | `neoglow:sensor_temperature_I4bN` | Termometr z dynamicznie pulsującym słupkiem cieczy | Animacja skurczu/rozkurczu poziomu |
-| 💧 | `neoglow:sensor_humidity_U1pX` | Kropla wilgotności z falującym obrysem i symbolem % | Animacja kołysania kropli wilgoci |
-| 🚪 | `neoglow:door_C8mK` | Drzwi wejściowe z mikro-uchyleniem i poświatą zamka | Animacja lekkiego uchylania skrzydła |
-| 🏡 | `neoglow:house_B6xR` | Nowoczesny domek z animacją skakania (np. przyjazd domownika) | `b31-bounce` (lekkie podskakiwanie) |
-| 🎬 | `neoglow:media_play_c4r9` | Przycisk odtwarzacza multimedialnego z pulsującym trójkątem | Animacja powiększania elementu play |
-| 🔌 | `neoglow:switch_outlet_A3nB` | Gniazdo sieciowe z wysyłanymi iskrami zasilania | Zintegrowany efekt iskier elektrycznych |
-
----
-
-## 🎨 Przykłady Użycia (YAML)
-
-Ikony mogą być używane we wszystkich standardowych oraz niestandardowych kartach Home Assistant (np. `button-card`, `custom:mushroom-chips-card`, `multiple-entity-row`).
-
-### Przykład 1: Standardowy Przycisk (Button Card)
-```yaml
-type: button
-name: Wentylator Salon
-icon: neoglow:fan_2vPq
-tap_action:
-  action: toggle
-entity: fan.salon
-```
-
-### Przykład 2: Zaawansowana karta Mushroom (Glow Effect)
-```yaml
-type: custom:mushroom-template-card
-primary: Światło Ambient
-secondary: "{{ states('light.ambient_glow') }}"
-icon: neoglow:acx_light_rgb_z1p3
-icon_color: amber
-entity: light.ambient_glow
-```
-
----
-
-## 🖥️ Interaktywny Explorer Ikon
-
-Do wyszukiwania, podglądu na żywo oraz wygodnego kopiowania nazw ikon zalecamy korzystanie z naszego interaktywnego web-explorera, który jest dostępny pod adresem:
+To search, preview, and easily copy the icon codes, we provide a state-of-the-art web search utility:
 👉 **[https://total.smallhost.pl/](https://total.smallhost.pl/)**
 
-*Wyszukiwanie odbywa się natychmiastowo w czasie rzeczywistym, a kliknięcie na kafelek automatycznie kopiuje pełny identyfikator ikony (np. `neoglow:gear_bolt_X9rB`) gotowy do wklejenia w konfigurację Home Assistant!*
+### What is the `hacs-neoglow-explorer`?
+The **NeoGlow Explorer** is a high-performance, glassmorphic web dashboard that serves as the official catalog for all available icons. 
+* **Real-Time Live Previews**: See every single icon's animation speed, gradient style, and glowing neon effects exactly as they appear in Home Assistant.
+* **Instant Search Engine**: Find icons instantly using filters and keywords (lighting, climate, media, sensors).
+* **Click-to-Copy convenience**: Simply click any icon tile to copy its Home Assistant code (e.g. `b31:gear_bolt_X9rB` or complete YAML) straight to your clipboard for instant setup.
 
 ---
 
-## 👥 Wsparcie & Swarm Development
+## 🚀 Easy HACS Installation
 
-Zestaw rozwijany przez Gringo Swarm. Jeśli masz sugestie nowych ikon lub chcesz zgłosić błąd, utwórz zgłoszenie Issue w tym repozytorium.
+### Step 1: Add Custom Repository to HACS
+1. Open your **Home Assistant** instance.
+2. Navigate to **HACS** -> **Frontend** on the left sidebar.
+3. Click the **Three Dots** menu in the top-right corner and select **Custom repositories** (*Niestandardowe repozytoria*).
+4. In the URL field, paste the link to this GitHub repository:
+   ```text
+   https://github.com/totalcodingpl/ha-neoglow-icons
+   ```
+5. Choose **Lovelace** (or *Dashboard*) as the Category.
+6. Click **Add** (*Dodaj*).
+
+### Step 2: Download the Plugin
+1. Find the newly added **NeoGlow Icons** plugin in your HACS list.
+2. Click on it, then click **Download** (*Pobierz*) in the bottom right corner.
+3. HACS will automatically download the required files to `/www/community/ha-neoglow-icons/` and register the Lovelace resource.
+
+### Step 3: Hard Reload Browser Cache
+Execute a hard reload in your web browser (`Ctrl` + `F5` on Windows/Linux, or `Cmd` + `Shift` + `R` on macOS) to ensure the Lovelace resource is loaded.
+
+---
+
+## 💎 Premium Showcase Icons
+
+The plugin registers all icons under the **`b31:`** prefix. Below are 15 of our premier animated and colorful icons:
+
+| Icon Preview | HA Icon ID | Description | CSS Animation Style |
+| :---: | :--- | :--- | :--- |
+| ⚡ | `b31:thunder_blink_4kR2` | Electric bolt with realistic lightning pulse | `b31-blink` (intermittent flashes) |
+| 🌀 | `b31:fan_2vPq` | Dynamic 4-blade fan with high-speed rotation | `b31-spin` (360° infinite rotation) |
+| 🔋 | `b31:battery_M5pT` | Battery cell showing horizontal power flow | `b31-flow` (animated charge flow) |
+| ⚡🔋 | `b31:battery_charging_J8qL` | Power cell under active fast charging | `b31-flash` (pulse-charging visual) |
+| ⚙️⚡ | `b31:gear_bolt_X9rB` | Rotating gear combined with a pulsing lightning bolt | Integrated (spin + pulse glow) |
+| 💡 | `b31:acx_light_on_p9w4` | Premium warm neon lightbulb with glowing aureole | `b31-pulse` (breathing light glow) |
+| 🌈 | `b31:acx_light_rgb_z1p3` | Smart RGB bulb cycling smoothly through color wheel | Dynamic (continuous HSL color shift) |
+| 🏃‍♂️ | `b31:acx_motion_active_a2x9` | Active motion sensor with expanding radar waves | `b31-pulse` + radial scaling |
+| 📡 | `b31:sensor_wifi_Y7sT` | Wi-Fi antenna propagating wireless signals | Sequential opacity wave |
+| 🌡️ | `b31:sensor_temperature_I4bN` | Intelligent temperature probe with moving fluid | Vertical fluid animation |
+| 💧 | `b31:sensor_humidity_U1pX` | Humidity droplet with oscillating water ripples | Floating drop motion |
+| 🚪 | `b31:door_C8mK` | Entry door with glowing lock and safety animations | Swing angle opening effect |
+| 🏡 | `b31:house_B6xR` | Eco-house layout that bounces on family member arrival | `b31-bounce` (vertical bounce) |
+| 🎬 | `b31:media_play_c4r9` | Media player button scaling dynamically in play state | Scaled pop pulse |
+| 🔌 | `b31:switch_outlet_A3nB` | Electric outlet throwing subtle power sparks | Spark effect emission |
+
+---
+
+## 🎨 Lovelace YAML Examples
+
+### Example 1: Standard Button Card
+```yaml
+type: button
+name: Ambient Fan
+icon: b31:fan_2vPq
+tap_action:
+  action: toggle
+entity: fan.living_room
+```
+
+### Example 2: Mushroom Template Card (RGB Glow)
+```yaml
+type: custom:mushroom-template-card
+primary: Smart Ambient
+secondary: "{{ states('light.ambient_rgb') }}"
+icon: b31:acx_light_rgb_z1p3
+entity: light.ambient_rgb
+```
+
+---
+
+## 👥 Support & Development
+
+Developed and optimized by **Gringo Swarm**. For requests, new icon suggestions, or issues, please open a GitHub Issue in this repository.

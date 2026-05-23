@@ -1,6 +1,6 @@
 # Gringo Memory (RAM)
-- [/] Konfiguracja i wdrożenie HACS-yfikacji dla NeoGlow Icons
-- [ ] Skonfigurowanie Git i `.gitignore`
-- [ ] Stworzenie manifestu HACS `hacs.json`
-- [ ] Zmodyfikowanie hacs/b31-icons.js o Dynamiczny Resolver i nową nazwę
-- [ ] Przygotowanie bogatego README.md z showcase ikon
+- [x] Konfiguracja i wdrożenie HACS-yfikacji dla NeoGlow Icons
+- [x] Skonfigurowanie Git i `.gitignore`
+- [x] Stworzenie manifestu HACS `hacs.json`
+- [x] Zmodyfikowanie wtyczki w `dist/ha-neoglow-icons.js` (Dynamiczny Resolver i nowa nazwa `neoglow`)
+- [x] Przygotowanie bogatego README.md z showcase 15 animowanych ikon i instrukcją HACS
