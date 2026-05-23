@@ -10,6 +10,20 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A81R5DP5)
 
+<br/><br/>
+
+### 💎 Animated & Colorful Gradient Icons Showcase
+  <img src="assets/motion_detect.svg" width="64" alt="Motion Detect" />
+  <img src="assets/bell_ringing.svg" width="64" alt="Bell Ringing" />
+  <img src="assets/warning_alert.svg" width="64" alt="Warning Alert" />
+  <img src="assets/lgg_wifi_signal.svg" width="64" alt="WiFi Signal" />
+  <img src="assets/lgg_battery_low.svg" width="64" alt="Battery Low" />
+  <img src="assets/lgg_fan_ceiling.svg" width="64" alt="Ceiling Fan" />
+  <img src="assets/alarm_alert.svg" width="64" alt="Alarm Alert" />
+  <img src="assets/gear_bolt.svg" width="64" alt="Gear Bolt" />
+  <img src="assets/sensor_battery.svg" width="64" alt="Sensor Battery" />
+  <img src="assets/lgg_presence_home_pr1.svg" width="64" alt="Presence Home" />
+
 </div>
 
 
@@ -57,21 +71,9 @@ Execute a hard reload in your web browser (`Ctrl` + `F5` on Windows/Linux, or `C
 
 ---
 
-## 💎 Premium Showcase Icons
+## 💎 Premium Showcase Icons Detailed Specs
 
-The plugin registers all icons under the **`b31:`** prefix. Below are 9 of our premier animated and colorful icons extracted directly from the plugin:
-
-<div align="center">
-  <img src="assets/motion_detect.svg" width="64" alt="Motion Detect" />
-  <img src="assets/bell_ringing.svg" width="64" alt="Bell Ringing" />
-  <img src="assets/warning_alert.svg" width="64" alt="Warning Alert" />
-  <img src="assets/lgg_wifi_signal.svg" width="64" alt="WiFi Signal" />
-  <img src="assets/lgg_battery_low.svg" width="64" alt="Battery Low" />
-  <img src="assets/lgg_fan_ceiling.svg" width="64" alt="Ceiling Fan" />
-  <img src="assets/alarm_alert.svg" width="64" alt="Alarm Alert" />
-  <img src="assets/gear_bolt.svg" width="64" alt="Gear Bolt" />
-  <img src="assets/sensor_battery.svg" width="64" alt="Sensor Battery" />
-</div>
+Below is the technical specification of the keyframe CSS animations and state definitions for our featured animated icons:
 
 | HA Icon ID | Description | CSS Animation Style |
 | :--- | :--- | :--- |
@@ -84,6 +86,7 @@ The plugin registers all icons under the **`b31:`** prefix. Below are 9 of our p
 | `b31:alarm_alert_r4w0` | Security alarm indicator | Flash/Blink animation |
 | `b31:gear_bolt_X9rB` | Rotating gear combined with a pulsing lightning bolt | Integrated (spin + pulse glow) |
 | `b31:sensor_battery_R6vC` | Battery sensor with levels | Level indicator animation |
+| `b31:lgg_presence_home_pr1` | Presence home sensor with dash circle | Outer circle rotation & pulse |
 
 ---
 
