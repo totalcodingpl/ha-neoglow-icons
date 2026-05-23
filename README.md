@@ -1,9 +1,17 @@
 # 🌈 NeoGlow Icons - Animated & Colorful Gradient Icons for Home Assistant
 
+<div align="center">
+
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
 ![Version](https://img.shields.io/badge/Version-1.0.3-blue.svg?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Category-Lovelace-purple.svg?style=for-the-badge)
+
+<br/>
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A81R5DP5)
+
+</div>
+
 
 Welcome to **NeoGlow Icons**, the ultimate way to revolutionize your Home Assistant dashboards!
 
@@ -106,29 +114,11 @@ entity: light.ambient_rgb
 
 Developed and optimized by **Gringo Swarm**. For requests, new icon suggestions, or issues, please open a GitHub Issue in this repository.
 
-### 💖 Wsparcie na Ko-fi (Support & Icon Requests)
+### 💖 Support My Work on Ko-fi
 
-Jeśli podoba Ci się projekt **NeoGlow Icons** i chcesz, aby baza ikon stale rosła, rozważ wsparcie mojego rozwoju na Ko-fi! Twoje wpłaty bezpośrednio pozwalają mi przeznaczyć więcej czasu na projektowanie kolejnych unikalnych, animowanych i kolorowych gradientowych ikon do Home Assistant. Każda wpłata ma znaczenie i przyspiesza dodawanie kolejnych ikon!
+If you enjoy using **NeoGlow Icons** and want to see this collection grow, please consider supporting my work on Ko-fi! Your support directly allows me to dedicate more time to designing, optimizing, and adding more unique, animated, and colorful gradient icons to the Home Assistant database. Every single cup of coffee helps expand the collection!
 
-👉 **[Wesprzyj mnie na Ko-fi / Support me on Ko-fi](https://ko-fi.com/A0A81R5DP5)**
-
-<div align="left">
-  <a href="https://ko-fi.com/A0A81R5DP5"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi" /></a>
+<div align="center">
+  <br/>
+  <a href="https://ko-fi.com/A0A81R5DP5"><img src="https://ko-fi.com/img/githubbutton_sm.svg" height="36" alt="Support me on Ko-fi" /></a>
 </div>
-
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'A0A81R5DP5');kofiwidget2.draw();</script>
-
----
-
-## 🛠️ Oficjalna Integracja z HACS (Official HACS Submission Process)
-
-Aby wtyczka **NeoGlow Icons** była dostępna dla każdego bezpośrednio z poziomu wyszukiwarki HACS (bez konieczności ręcznego dodawania jako „niestandardowe repozytorium”), przechodzimy przez następujący proces:
-
-1. **Konfiguracja Manifestu (`hacs.json`):**
-   Wskazujemy HACS dokładną ścieżkę do plików wtyczki (`dist/ha-neoglow-icons.js`) oraz wszystkich dodatkowych plików zasobów (`ha-neoglow-icons.css` oraz `ha-neoglow-icons.json`).
-2. **Publikacja Wydania na GitHubie (GitHub Release):**
-   Tworzymy oficjalne wydanie z tagiem wersji (np. `v1.0.3`) zawierające zaktualizowane i przetestowane pliki.
-3. **Zgłoszenie Pull Request do bazy HACS Default (`hacs/default`):**
-   Dodajemy nasze repozytorium (`totalcodingpl/ha-neoglow-icons`) w porządku alfabetycznym do oficjalnej listy wtyczek (`plugin`) w repozytorium [hacs/default](https://github.com/hacs/default).
-4. **Weryfikacja CI & Akceptacja:**
-   Automatyczne testy HACS weryfikują poprawność struktury repozytorium i manifestu, a po ich przejściu moderatorzy zatwierdzają zmianę. NeoGlow staje się oficjalnie wyszukiwalny na całym świecie!
