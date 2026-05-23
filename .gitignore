@@ -10,3 +10,5 @@
 !.clinerules
 !.gringo-tools/
 !/assets/
+!bump-version.ps1
+
