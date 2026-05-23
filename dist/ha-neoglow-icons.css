@@ -1,0 +1,27 @@
+/* b31-icons.css */
+
+@keyframes b31-spin { 
+    from { transform: rotate(0deg); } 
+    to { transform: rotate(360deg); } 
+}
+
+@keyframes b31-pulse { 
+    0%, 100% { transform: scale(0.9); opacity: 1; } 
+    50% { transform: scale(1.1); opacity: 0.8; } 
+}
+
+@keyframes b31-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes b31-blink { 
+    0%, 100% { opacity: 1; } 
+    50% { opacity: 0.3; } 
+}
+
+/* Możesz tu dopisać dowolną nową animację, np. 'flash' */
+@keyframes b31-flash {
+    0%, 100% { opacity: 1; filter: brightness(1); }
+    50% { opacity: 0.5; filter: brightness(1.5); }
+}

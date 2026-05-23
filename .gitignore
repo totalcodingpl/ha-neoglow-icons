@@ -1,0 +1,11 @@
+# Ignoruj wszystko na poziomie głównym
+/*
+
+# Wyjątki - nie ignoruj tych plików/folderów:
+!/dist/
+!hacs.json
+!README.md
+!.gitignore
+!.antigravityrules
+!.clinerules
+!.gringo-tools/
