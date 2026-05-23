@@ -2,5 +2,9 @@
   "name": "NeoGlow Icons",
   "render_anonymous": true,
   "content_in_root": false,
-  "filename": "ha-neoglow-icons.js"
+  "filename": "dist/ha-neoglow-icons.js",
+  "additional_files": [
+    "dist/ha-neoglow-icons.css",
+    "dist/ha-neoglow-icons.json"
+  ]
 }
