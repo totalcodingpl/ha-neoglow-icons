@@ -14,7 +14,7 @@ Welcome to **NeoGlow Icons**, the ultimate way to revolutionize your Home Assist
 ## 🖥️ Official Companion Web Explorer
 
 To search, preview, and easily copy the icon codes, we provide a state-of-the-art web search utility:
-👉 **[https://total.smallhost.pl/index3.html](https://total.smallhost.pl/index3.html)**
+👉 **[https://total.smallhost.pl/hacs-neoglow-explorer/](https://total.smallhost.pl/hacs-neoglow-explorer/)**
 
 ### What is the `hacs-neoglow-explorer`?
 The **NeoGlow Explorer** is a high-performance, glassmorphic web dashboard that serves as the official catalog for all available icons. 
@@ -50,19 +50,31 @@ Execute a hard reload in your web browser (`Ctrl` + `F5` on Windows/Linux, or `C
 
 ## 💎 Premium Showcase Icons
 
-The plugin registers all icons under the **`b31:`** prefix. Below are 3 of our premier animated and colorful icons extracted directly from the plugin:
+The plugin registers all icons under the **`b31:`** prefix. Below are 9 of our premier animated and colorful icons extracted directly from the plugin:
 
 <div align="center">
+  <img src="assets/motion_detect.svg" width="64" alt="Motion Detect" />
+  <img src="assets/bell_ringing.svg" width="64" alt="Bell Ringing" />
+  <img src="assets/warning_alert.svg" width="64" alt="Warning Alert" />
+  <img src="assets/lgg_wifi_signal.svg" width="64" alt="WiFi Signal" />
+  <img src="assets/lgg_battery_low.svg" width="64" alt="Battery Low" />
+  <img src="assets/lgg_fan_ceiling.svg" width="64" alt="Ceiling Fan" />
+  <img src="assets/alarm_alert.svg" width="64" alt="Alarm Alert" />
   <img src="assets/gear_bolt.svg" width="64" alt="Gear Bolt" />
-  <img src="assets/house.svg" width="64" alt="House" />
-  <img src="assets/crazy_fan.svg" width="64" alt="Crazy Fan" />
+  <img src="assets/sensor_battery.svg" width="64" alt="Sensor Battery" />
 </div>
 
 | HA Icon ID | Description | CSS Animation Style |
 | :--- | :--- | :--- |
+| `b31:motion_detect_k9x2` | Active motion detection sensor | Integrated pulse & rotation |
+| `b31:bell_ringing_p2m4` | Ringing notification bell | Integrated swing animation |
+| `b31:warning_alert_q5v8` | Critical warning alert symbol | Pulse animation |
+| `b31:lgg_wifi_signal_wf2` | Wi-Fi signal strength indicator | Sequential wave animation |
+| `b31:lgg_battery_low_bt2` | Low battery state | Blink/Pulse animation |
+| `b31:lgg_fan_ceiling_fn1` | Ceiling fan spinning | Infinite rotation |
+| `b31:alarm_alert_r4w0` | Security alarm indicator | Flash/Blink animation |
 | `b31:gear_bolt_X9rB` | Rotating gear combined with a pulsing lightning bolt | Integrated (spin + pulse glow) |
-| `b31:house_B6xR` | Eco-house layout that bounces on family member arrival | `b31-bounce` (vertical bounce) |
-| `b31:crazy_fan_f9t2` | Dynamic 4-blade fan with high-speed rotation | Integrated rotation & pulse |
+| `b31:sensor_battery_R6vC` | Battery sensor with levels | Level indicator animation |
 
 ---
 
