@@ -41,7 +41,7 @@ Write-Host "✅ Pushed to master successfully." -ForegroundColor Green
 
 # 5. Create GitHub Release
 Write-Host "📦 Creating GitHub Release v$cleanVersion..." -ForegroundColor Cyan
-gh release create "v$cleanVersion" --title "v$cleanVersion" --notes "NeoGlow Icons release v$cleanVersion"
+gh release create "v$cleanVersion" dist/ha-neoglow-icons.js dist/ha-neoglow-icons.css dist/ha-neoglow-icons.json --title "v$cleanVersion" --notes "NeoGlow Icons release v$cleanVersion"
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Failed to create GitHub release!"
     exit 1
