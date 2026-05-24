@@ -9,6 +9,7 @@
 - [x] Wdrożenie angielskich widgetów wsparcia Ko-fi i wyśrodkowanie przycisków w README
 - [x] Skonfigurowanie wtyczki z emotikonami w `hacs.json` dla wyróżnienia w wyszukiwarce HACS
 - [x] Utworzenie wydania `v1.0.3` na GitHubie i oficjalne zgłoszenie do wyszukiwarki HACS Default (Pull Request #7931)
+- [x] Naprawienie błędu HACS Action 401 poprzez wgranie brakujących plików assetów do release `v1.0.3` i ponowne zgłoszenie (Pull Request #7956)
 
 ## 📌 HACS Update & Version Bump Process
 
@@ -31,3 +32,10 @@ To simplify the version bump and release process, a PowerShell script `bump-vers
 
 Once the release is live, HACS will automatically update its index and distribute the new icons/code to all users.
 
+## 📌 HACS Default Inclusion Requirements
+
+To successfully submit the repository to the HACS default store via a Pull Request (PR), the following strict requirements must be met:
+1. **GitHub Repository Description:** The repository must have a short description set in its GitHub settings.
+2. **GitHub Topics:** The repository must have relevant tags/topics assigned (e.g., `home-assistant`, `hacs`, `icons`).
+3. **Valid `hacs.json`:** The manifest file must only contain explicitly allowed keys. Keys like `additional_files` or `render_anonymous` are rejected by the HACS validation action.
+4. **Release Assets:** If `hacs.json` specifies a specific filename (e.g., `dist/ha-neoglow-icons.js`), this file **must be uploaded as a release asset** attached to the latest GitHub Release. Without it, the HACS validation bot will fail with a `401` error. (This is now automated in `bump-version.ps1`).
