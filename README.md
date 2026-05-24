@@ -3,7 +3,7 @@
 <div align="center">
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
-![Version](https://img.shields.io/badge/Version-1.0.3-blue.svg?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.0.4-blue.svg?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Category-Lovelace-purple.svg?style=for-the-badge)
 
 <br/>
