@@ -11,4 +11,5 @@
 !.gringo-tools/
 !/assets/
 !bump-version.ps1
+!.github/
 
