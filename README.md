@@ -36,6 +36,8 @@ Welcome to **NeoGlow Icons**, the ultimate way to revolutionize your Home Assist
 
 ## 🖥️ Official Companion Web Explorer
 
+![Explorer screenshot](assets/explorer-desktop.png)
+
 To search, preview, and easily copy the icon codes, we provide a state-of-the-art web search utility:
 👉 **[https://total.smallhost.pl/hacs-neoglow-explorer/](https://total.smallhost.pl/hacs-neoglow-explorer/)**
 
